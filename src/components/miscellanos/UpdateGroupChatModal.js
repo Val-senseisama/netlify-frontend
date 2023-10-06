@@ -50,7 +50,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
       };
 
       const { data } = await axios.get(
-        `process.env.BACKEND_API/api/user?search=${search}`,
+        `${process.env.BACKEND_API}/api/user?search=${search}`,
         config
       );
       console.log(data);
