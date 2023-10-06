@@ -7,7 +7,7 @@ import { getSender, getSenderPic } from "../../config/ChatLogics";
 import GroupChatModal from "./GroupChatModal";
 import { Avatar } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
 
 const MyChats = ({ fetchAgain }) => {
   const [loggedUser, setLoggedUser] = useState();
