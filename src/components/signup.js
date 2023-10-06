@@ -88,7 +88,7 @@ function Register(props) {
         },
       };
       const { data } = await axios.post(
-        "process.env.BACKEND_APIprocess.env.BACKEND_API/api/user",
+        "process.env.BACKEND_API/api/user",
         { name, email, password, pic },
         config
       );

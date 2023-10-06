@@ -7,7 +7,9 @@ import { getSender, getSenderPic } from "../../config/ChatLogics";
 import GroupChatModal from "./GroupChatModal";
 import { Avatar } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AddIcon } from "@chakra-ui/icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@f"
 
 const MyChats = ({ fetchAgain }) => {
   const [loggedUser, setLoggedUser] = useState();
@@ -73,9 +75,10 @@ const MyChats = ({ fetchAgain }) => {
           <Button
             display='flex'
             fontSize={{ base: "17px", md: "10px", lg: "17px" }}
+            rightIcon={<AddIcon />}
           >
             New Group
-            <i className='fa-solid fa-people-roof'></i>
+            {/* <i className='fa-solid fa-people-roof'></i> */}
           </Button>
         </GroupChatModal>
       </Box>
