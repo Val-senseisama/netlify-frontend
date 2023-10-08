@@ -1,7 +1,7 @@
 import React from "react";
 import {  Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
-import ChatPage from "./pages/Chat";
+import Chatpage from "./pages/Chat";
 import Homepage from "./pages/Home";
 import "../src/login.css"
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
     <Routes>
       <Route path="/" element=<Homepage />/>
-      <Route path="/chat" element=<ChatPage /> />
+      <Route path="/chat" element=<Chatpage /> />
     </Routes>
     </div>
   );
