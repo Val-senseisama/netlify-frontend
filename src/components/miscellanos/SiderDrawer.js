@@ -66,7 +66,7 @@ const SideDrawer = () => {
       };
 
       const { data } = await axios.get(
-        `process.env.BACKEND_API/api/user?search=${search}`,
+        `${process.env.REACT_APP_BACKEND_API}/api/user?search=${search}`,
         config
       );
 
@@ -101,7 +101,7 @@ const SideDrawer = () => {
         },
       };
       const { data } = await axios.post(
-        `process.env.BACKEND_API/api/chat`,
+        `${process.env.REACT_APP_BACKEND_API}/api/chat`,
         { userId },
         config
       );
