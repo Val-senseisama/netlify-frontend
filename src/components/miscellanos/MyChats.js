@@ -77,7 +77,7 @@ const MyChats = ({ fetchAgain }) => {
             fontSize={{ base: "17px", md: "10px", lg: "17px" }}
             rightIcon={<AddIcon />}
           >
-            New Group // <i className='fa-solid fa-people-roof'></i>
+            New Group <i className='fa-solid fa-people-roof'></i>
           </Button>
         </GroupChatModal>
       </Box>
