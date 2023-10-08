@@ -19,9 +19,8 @@ import ScrollableChat from "./ScrollableChat";
 import io from "socket.io-client";
 import animationData from "../Animations/typing.json";
 import Lottie from "lottie-react";
-// import SendIcon from '@mui/icons-material/Send';
 
-const ENDPOINT = "https://a-townhall.herokuapp.com/";
+const ENDPOINT = "https://th-backend-45458f922f56.herokuapp.com";
 
 var socket, selectedChatCompare;
 
