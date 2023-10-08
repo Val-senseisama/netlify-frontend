@@ -204,7 +204,7 @@ const SideDrawer = () => {
             </MenuButton>
             <MenuList>
               <ProfileModal
-                size={{ base: "sm", md: "lg", lg: "xl" }}
+                size={{ base: "sm", md: "lg", lg: "lg" }}
                 user={user}
               >
                 <MenuItem color='#000'>My Profile</MenuItem>{" "}
