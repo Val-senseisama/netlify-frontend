@@ -52,7 +52,7 @@ const ProfileModal = ({user, children}) =>{
             alt={user.name}
            />
            <Text
-           fontSize={{base: "28px", md: "30px"}}
+           fontSize={{base: "16px", md: "20px"}}
            fontFamily="Helvetica">
             Email: {user.email}
            </Text>
