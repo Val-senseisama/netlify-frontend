@@ -47,7 +47,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   const { selectedChat, setSelectedChat, user, notification, setNotification } =
     ChatState();
 
-  const fetchMessages = async () => {
+    const fetchMessages = async () => {
     if (!selectedChat) return;
 
     try {
@@ -60,10 +60,9 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `${process.env.REACT_APP_BACKEND_API}/api/message/${selectedChat._id}`,
+        ``${process.env.REACT_APP_BACKEND_API}/api/message/${selectedChat._id}`,
         config
       );
-      // Why na, like why
       setMessages(data);
       setLoading(false);
 
