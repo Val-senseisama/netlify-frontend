@@ -172,7 +172,7 @@ const SideDrawer = () => {
                 m={1}
               />
             </MenuButton>
-            <MenuList pl={2}>
+            <MenuList pl={2} color="#000">
               {!notification.length && "No New Messages"}
               {notification.map((notif) => (
                 <MenuItem
