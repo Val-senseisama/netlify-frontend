@@ -126,9 +126,9 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     fetchMessages();
 
     selectedChatCompare = selectedChat;
-    // eslint-disable-next-line
+   
   }, [selectedChat]);
-
+  
   useEffect(() => {
     socket.on("message recieved", (newMessageRecieved) => {
       if (
@@ -147,6 +147,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
   const typingHandler = (e) => {
     setNewMessage(e.target.value);
+
     if (!socketConnected) return;
 
     if (!typing) {
@@ -158,7 +159,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     setTimeout(() => {
       var timeNow = new Date().getTime();
       var timeDiff = timeNow - lastTypingTime;
-
       if (timeDiff >= timerLength && typing) {
         socket.emit("stop typing", selectedChat._id);
         setTyping(false);
